@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- adding logo in the title of the document -->
+    <link rel="icon" href="./asset/logo.png" />
+    <!-- Linking style.css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Spotify - Web Player music for everyone</title>
+    <!-- Font awesome link for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Linking google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <!-- sidebar -->
+      <div class="sidebar">
+        <!-- Nav-> home, search -->
+        <div class="nav">
+          <!-- as the home color is white and search is little lighter so we changed the opacity to lighter for both in css and internally resetting the opacity of hom -->
+          <div class="nav-option" style="opacity: 1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+          <div class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Search</a>
+          </div>
+        </div>
+        <!-- Library -> remaining content -->
+        <div class="library">
+          <!-- it contain library -->
+          <div class="options">
+            <!-- image and library -->
+            <!-- as the style of lib-option is same as nav-option so we donot need to right the code again but should include nav-option as class -->
+            <div class="lib-option nav-option">
+              <img src="./asset/library_icon.png" />
+              <a href="#">Your Library</a>
+            </div>
+            <!-- + -> icons -->
+            <div class="icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- it contains boxes -->
+          <div class="lib-box">
+            <!-- create two box which contain 2 para and 1 button -->
+            <div class="box">
+              <p class="box-p1">Create your first playlist</p>
+              <p class="box-p2">It's easy, we'll help you</p>
+              <button class="badge">Create playlist</button>
+            </div>
+            <div class="box">
+              <p class="box-p1">Let's find some podcasts to follow</p>
+              <p class="box-p2">We'll keep you updated on new episodes</p>
+              <button class="badge">Browse podcasts</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- main-content -->
+      <div class="main-content">
+        <!-- sticky nav bar -->
+        <div class="sticky-nav">
+          <!-- left and right arrow -->
+          <div class="sticky-nav-icons">
+            <img src="./asset/backward_icon.png" />
+            <img src="./asset/forward_icon.png" class="hide" />
+          </div>
+
+          <!-- remaining buttons and user -->
+          <div class="sticky-nav-options">
+            <button class="badge hide">Explore Premium</button>
+            <button class="badge dark-badge">
+              <i
+                class="fa-sharp fa-regular fa-circle-down"
+                style="padding-right: 0.5rem"
+              ></i
+              >Instal App
+            </button>
+            <i class="fa-regular fa-user"></i>
+          </div>
+        </div>
+
+        <!-- cards portion -->
+        <!-- Recently played -->
+        <h2>Recently Played</h2>
+        <div class="card-container">
+          <!-- individual card content to repeat we use the same card code-->
+          <div class="card">
+            <img src="./asset/card1img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily update of the most played tracks right now..
+            </p>
+          </div>
+        </div>
+
+        <!-- Trending Now -->
+        <h2>Trending Now</h2>
+        <div class="card-container">
+          <div class="card">
+            <img src="./asset/card1img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily update of the most played tracks right now..
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="./asset/card2img.jpeg" class="card-img" />
+            <p class="card-title">Mahiye Jinna Sohna</p>
+            <p class="card-info">Darshan Raval</p>
+          </div>
+
+          <div class="card">
+            <img src="./asset/card3img.jpeg" class="card-img" />
+            <p class="card-title">Pasoori Nu</p>
+            <p class="card-info">Arijit Singh, Rochak Kohli,Tulsi Kumar</p>
+          </div>
+
+          <div class="card">
+            <img src="./asset/card4img.jpeg" class="card-img" />
+            <p class="card-title">Naa Ready</p>
+            <p class="card-info">Anirudh Ravichander, Thalapathy Vijay..</p>
+          </div>
+        </div>
+
+        <!-- Featured Charts -->
+        <h2>Featured Charts</h2>
+        <div class="card-container">
+          <div class="card">
+            <img src="./asset/card5img.jpeg" class="card-img" />
+            <p class="card-title">Top Songs - Global</p>
+            <p class="card-info">
+              Your weekly update of the most played tracks right..
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="./asset/card6img.jpeg" class="card-img" />
+            <p class="card-title">Top Songs - India</p>
+            <p class="card-info">
+              Your weekly update of the most played tracks right..
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="./asset/card1img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily update of the most played tracks right now..
+            </p>
+          </div>
+        </div>
+
+        <!-- footer to display a line -->
+        <div class="footer">
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <!-- music-player -->
+      <div class="music-player">
+        <!-- album -->
+        <div class="album">
+          <img src="./assignment/album_picture.jpeg" />
+          <div class="album-content">
+            <div class="album-para">Daylight</div>
+            <div class="album-para" style="font-size: 0.75rem; opacity: 0.7">
+              David Kushnar
+            </div>
+          </div>
+          <img
+            src="./assignment/album_icon1.png"
+            class="album-icon"
+            style="opacity: 0.7"
+          />
+          <img
+            src="./assignment/album_icon2.png"
+            style="height: 2.5rem; opacity: 0.7; margin-top: 0.3rem"
+            class="album-icon"
+          />
+        </div>
+
+        <!-- player -->
+        <div class="player">
+          <div class="player-controls">
+            <img src="./asset/player_icon1.png" />
+            <img src="./asset/player_icon2.png" />
+            <img
+              src="./asset/player_icon3.png"
+              style="opacity: 1; height: 2rem"
+            />
+            <img src="./asset/player_icon4.png" />
+            <img src="./asset/player_icon5.png" />
+          </div>
+          <div class="playback-bar">
+            <span class="curr-time">00:00</span>
+            <!-- to increase the 1 at a time -->
+            <input
+              type="range"
+              min="0"
+              max="100"
+              class="progress-bar"
+              step="1"
+            />
+            <span class="tot-time">3:33</span>
+          </div>
+        </div>
+
+        <!-- controls -->
+        <div class="controls">
+          <img src="./assignment/controls_icon1.png" class="controls-icon" />
+          <img src="./assignment/controld_icon2.png" class="controls-icon" />
+          <img
+            src="./assignment/controls_icon3.png"
+            class="controls-icon"
+            style="height: 1.2rem; width: 1.2rem; opacity: 0.5"
+          />
+          <img
+            src="./assignment/controls_icon4.png"
+            class="controls-icon"
+            style="height: 1.2rem; width: 1.2rem; opacity: 0.5"
+          />
+          <img src="./assignment/controls_icon5.png" class="controls-icon" />
+          <input type="range" class="volume" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
